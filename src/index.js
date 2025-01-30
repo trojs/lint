@@ -20,7 +20,16 @@ const rules = {
   sonar: sonarRules,
   format: stylisticRules,
   import: importRules,
-  promise: promiseRules
+  promise: promiseRules,
+  all: {
+    ...importRules,
+    ...trojsRules,
+    ...jsdocRules,
+    ...nodeRules,
+    ...promiseRules,
+    ...sonarRules,
+    ...stylisticRules
+  }
 }
 const plugins = {
   stylistic: stylisticPlugin,
