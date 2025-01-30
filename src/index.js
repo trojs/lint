@@ -32,7 +32,7 @@ const rules = {
   }
 }
 const plugins = {
-  stylistic: stylisticPlugin,
+  '@stylistic': stylisticPlugin,
   '@stylistic/js': stylisticJsPlugin,
   'import-x': importPlugin,
   jsdoc: jsdocPlugin,
