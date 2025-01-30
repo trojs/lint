@@ -1,10 +1,20 @@
+import stylisticPlugin from '@stylistic/eslint-plugin'
 export default {
-  'stylistic/semi': [
+  ...stylisticPlugin.configs['recommended-flat'].rules,
+  '@stylistic/semi': [
     'error',
     'never'
   ],
   '@stylistic/js/comma-dangle': [
     'error',
     'never'
+  ],
+  '@stylistic/comma-dangle': [
+    'error',
+    'never'
+  ],
+  '@stylistic/quote-props': [
+    'error',
+    'as-needed'
   ]
 }

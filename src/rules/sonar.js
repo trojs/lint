@@ -116,7 +116,7 @@ export default {
   'sonarjs/no-duplicate-in-composite': 'error',
   'sonarjs/no-duplicate-string': [
     'error',
-    {threshold: 3}
+    { threshold: 3 }
   ],
   'sonarjs/no-duplicated-branches': 'error',
   'sonarjs/no-element-overwrite': 'error',
