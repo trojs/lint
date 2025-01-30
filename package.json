@@ -1,6 +1,6 @@
 {
     "name": "@trojs/lint",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Lint rules",
     "type": "module",
     "main": "src/index.js",
@@ -20,7 +20,9 @@
         "src/rules/import.js",
         "src/rules/jsdoc.js",
         "src/rules/node.js",
+        "src/rules/promise.js",
         "src/rules/sonar.js",
+        "src/rules/stylistic.js",
         "src/rules/tro.js"
     ],
     "repository": {
