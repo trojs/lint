@@ -5,10 +5,6 @@ export default {
     'error',
     'never'
   ],
-  '@stylistic/js/comma-dangle': [
-    'error',
-    'never'
-  ],
   '@stylistic/comma-dangle': [
     'error',
     'never'
