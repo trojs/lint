@@ -1,0 +1,66 @@
+{
+    "name": "@trojs/lint",
+    "version": "0.1.0",
+    "description": "Lint rules",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "lint": "eslint --config src/eslint.config.js",
+        "lint:fix": "eslint --config src/eslint.config.js --fix",
+        "lint:report": "eslint --config src/eslint.config.js -f json -o report.json",
+        "lint:rules": "eslint --config src/eslint.config.js --print-config src/index.js > eslintconfig.json",
+        "test": "c8 node --test",
+        "cpd": "node_modules/jscpd/bin/jscpd src",
+        "vulnerabilities": "npm audit --omit=dev"
+    },
+    "files": [
+        "eslingconfig.json",
+        "src/index.js",
+        "src/eslint.config.js",
+        "src/rules/import.js",
+        "src/rules/jsdoc.js",
+        "src/rules/node.js",
+        "src/rules/sonar.js",
+        "src/rules/tro.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/trojs/lint.git"
+    },
+    "keywords": [
+        "lint"
+    ],
+    "author": {
+        "name": "Pieter Wigboldus",
+        "url": "https://trojs.org/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/trojs/lint/issues"
+    },
+    "homepage": "https://github.com/trojs/lint#readme",
+    "dependencies": {
+        "@eslint/js": "^9.19.0",
+        "@stylistic/eslint-plugin": "^3.0.1",
+        "@stylistic/eslint-plugin-js": "^3.0.1",
+        "eslint": "^9.19.0",
+        "eslint-plugin-import-x": "^4.6.1",
+        "eslint-plugin-jsdoc": "^50.6.3",
+        "eslint-plugin-n": "^17.15.1",
+        "eslint-plugin-promise": "^7.2.1",
+        "eslint-plugin-sonarjs": "^3.0.1",
+        "globals": "^15.14.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.12.0",
+        "c8": "^10.1.3",
+        "jscpd": "^4.0.5"
+    },
+    "engines": {
+        "node": ">= 22"
+    },
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/w3nl"
+    }
+}
