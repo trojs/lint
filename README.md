@@ -1,1 +1,1 @@
-# lint
+# TroJS lint rules
