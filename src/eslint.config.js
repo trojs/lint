@@ -6,6 +6,7 @@ import promisePlugin from 'eslint-plugin-promise'
 import sonarjsPlugin from 'eslint-plugin-sonarjs'
 import stylisticPlugin from '@stylistic/eslint-plugin'
 import stylisticJsPlugin from '@stylistic/eslint-plugin-js'
+import pluginJs from '@eslint/js'
 import trojsRules from './rules/tro.js'
 import jsdocRules from './rules/jsdoc.js'
 import nodeRules from './rules/node.js'
@@ -23,6 +24,7 @@ const customGlobals = {
 }
 
 export default [
+  pluginJs.configs.recommended,
   {
     languageOptions: {
       ecmaVersion: 'latest',
