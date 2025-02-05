@@ -16,5 +16,20 @@ export default {
   '@stylistic/arrow-parens': [
     'error',
     'always'
-  ]
+  ],
+  "@stylistic/space-before-function-paren": [
+    'error',
+      {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "named": "always"
+      }
+    ],
+    "@stylistic/brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
 }
