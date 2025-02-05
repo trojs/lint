@@ -1,6 +1,6 @@
 {
     "name": "@trojs/lint",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "description": "Lint rules",
     "type": "module",
     "main": "src/index.js",
