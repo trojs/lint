@@ -17,19 +17,19 @@ export default {
     'error',
     'always'
   ],
-  "@stylistic/space-before-function-paren": [
+  '@stylistic/space-before-function-paren': [
     'error',
-      {
-        "anonymous": "always",
-        "asyncArrow": "always",
-        "named": "always"
-      }
-    ],
-    "@stylistic/brace-style": [
-      "error",
-      "1tbs",
-      {
-        "allowSingleLine": true
-      }
-    ],
+    {
+      anonymous: 'always',
+      asyncArrow: 'always',
+      named: 'always'
+    }
+  ],
+  '@stylistic/brace-style': [
+    'error',
+    '1tbs',
+    {
+      allowSingleLine: true
+    }
+  ]
 }
