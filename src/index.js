@@ -43,6 +43,7 @@ const plugins = {
   jsdoc: jsdocPlugin,
   n: nodePlugin,
   promise: promisePlugin,
-  sonarjs: sonarjsPlugin
+  sonarjs: sonarjsPlugin,
+  js: pluginJs
 }
 export { rules, plugins, eslintConfig as default }

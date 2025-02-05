@@ -12,5 +12,9 @@ export default {
   '@stylistic/quote-props': [
     'error',
     'as-needed'
+  ],
+  '@stylistic/arrow-parens': [
+    'error',
+    'always'
   ]
 }
