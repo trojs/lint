@@ -1,7 +1,7 @@
-import importPlugin from 'eslint-plugin-import-x'
+import { flatConfigs } from 'eslint-plugin-import-x'
 
 export default {
-  ...importPlugin.flatConfigs.recommended.rules,
+  ...flatConfigs.recommended.rules,
   'import-x/prefer-default-export': 'off',
   'import-x/named': 'error',
   'import-x/no-named-as-default': 'error',
