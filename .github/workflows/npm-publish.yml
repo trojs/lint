@@ -32,7 +32,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          TAG=${GITHUB_REF#refs/tags/v}
+          TAG=${GITHUB_REF#refs/tags/}
+          TAG=${TAG#v}
           npm version $TAG --no-git-tag-version
           git add package.json package-lock.json
           git commit -m "ci: set version to $TAG [skip ci]"
