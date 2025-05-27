@@ -34,13 +34,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           TAG=${GITHUB_REF#refs/tags/}
           TAG=${TAG#v}
-          # Find the branch the tag points to
-          BRANCH=$(git branch -r --contains $GITHUB_REF | grep -v '\->' | head -n 1 | sed 's/origin\///')
-          git checkout $BRANCH
+          git fetch origin main
+          git checkout main
+          git pull
           npm version $TAG --no-git-tag-version
           git add package.json package-lock.json
           git commit -m "ci: set version to $TAG [skip ci]"
-          git push origin $BRANCH
+          git push origin main
       - run: npm run build --if-present
       - run: npm publish --access public
         env:
