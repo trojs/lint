@@ -21,10 +21,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
+          token: ${{ secrets.GITHUB_TOKEN }}
       - run: npm ci
       - name: Set version from tag
         run: |
