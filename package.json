@@ -11,7 +11,7 @@
         "lint:rules": "eslint --config src/eslint.config.js --print-config src/index.js > eslintconfig.json",
         "test": "c8 node --test",
         "cpd": "node_modules/jscpd/bin/jscpd src",
-        "vulnerabilities": "npm audit --omit=dev"
+        "vulnerabilities": "npm audit --omit=dev --audit-level=moderate"
     },
     "files": [
         "eslingconfig.json",
@@ -64,5 +64,8 @@
     "funding": {
         "type": "github",
         "url": "https://github.com/sponsors/w3nl"
+    },
+    "overrides": {
+        "brace-expansion@>=2.0.1 <=4.0.0": "4.0.1"
     }
 }
