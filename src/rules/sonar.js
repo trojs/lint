@@ -149,7 +149,6 @@ export default {
   'sonarjs/no-incorrect-string-concat': 'off',
   'sonarjs/no-internal-api-use': 'error',
   'sonarjs/no-intrusive-permissions': 'error',
-  'sonarjs/no-invalid-await': 'error',
   'sonarjs/no-invariant-returns': 'error',
   'sonarjs/no-inverted-boolean-check': 'error',
   'sonarjs/no-ip-forward': 'error',

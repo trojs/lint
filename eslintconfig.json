@@ -1078,9 +1078,6 @@
     "sonarjs/no-intrusive-permissions": [
       2
     ],
-    "sonarjs/no-invalid-await": [
-      2
-    ],
     "sonarjs/no-invariant-returns": [
       2
     ],

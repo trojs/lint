@@ -5,7 +5,6 @@ import nodePlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
 import sonarjsPlugin from 'eslint-plugin-sonarjs'
 import stylisticPlugin from '@stylistic/eslint-plugin'
-import stylisticJsPlugin from '@stylistic/eslint-plugin-js'
 import pluginJs from '@eslint/js'
 import trojsRules from './rules/tro.js'
 import jsdocRules from './rules/jsdoc.js'
@@ -42,7 +41,6 @@ export default [
     },
     plugins: {
       '@stylistic': stylisticPlugin,
-      '@stylistic/js': stylisticJsPlugin,
       'import-x': importPlugin,
       jsdoc: jsdocPlugin,
       n: nodePlugin,
