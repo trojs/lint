@@ -1,6 +1,6 @@
 import stylisticPlugin from '@stylistic/eslint-plugin'
 export default {
-  ...stylisticPlugin.configs['recommended-flat'].rules,
+  ...stylisticPlugin.configs.recommended.rules,
   '@stylistic/semi': [
     'error',
     'never'
