@@ -123,7 +123,7 @@ export default {
     }
   ],
   'prefer-destructuring': [
-    'error',
+    'warn',
     {
       VariableDeclarator: {
         array: false,
