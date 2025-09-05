@@ -163,7 +163,6 @@ export default {
   'sonarjs/no-nested-incdec': 'off',
   'sonarjs/no-nested-switch': 'off',
   'sonarjs/no-nested-template-literals': 'error',
-  'sonarjs/no-one-iteration-loop': 'error',
   'sonarjs/no-os-command-from-path': 'error',
   'sonarjs/no-parameter-reassignment': 'error',
   'sonarjs/no-primitive-wrappers': 'error',
