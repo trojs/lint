@@ -1,0 +1,6 @@
+{
+    "name": "@trojs/lint",
+    "version": "0.3.8",
+    "license": "MIT",
+    "exports": "./src/index.js"
+}

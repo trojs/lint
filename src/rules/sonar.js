@@ -1,4 +1,6 @@
-export default {
+/* @ts-self-types="../../types/rules/sonar.d.ts" */
+/** @type {Record<string, unknown>} */
+const rules = {
   'sonarjs/anchor-precedence': 'error',
   'sonarjs/argument-type': 'error',
   'sonarjs/arguments-order': 'error',
@@ -329,3 +331,5 @@ export default {
   'sonarjs/no-unused-expressions': 'off'
   // 'sonarjs/rules-of-hooks': 'error'
 }
+
+export default rules

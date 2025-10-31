@@ -1,3 +1,4 @@
+/* @ts-self-types="../types/eslint.config.d.ts" */
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import importPlugin from 'eslint-plugin-import-x'
 import globals from 'globals'
@@ -22,7 +23,8 @@ const customGlobals = {
   Response: 'readonly'
 }
 
-export default [
+/** @type {readonly unknown[]} */
+const config = [
   pluginJs.configs.recommended,
   {
     languageOptions: {
@@ -37,6 +39,15 @@ export default [
     settings: {
       jsdoc: {
         mode: 'typescript'
+      },
+      'import-x/resolver': {
+        node: {
+          extensions: ['.mjs', '.js', '.cjs', '.ts', '.tsx']
+        },
+        typescript: {
+          project: true,
+          alwaysTryTypes: true
+        }
       }
     },
     plugins: {
@@ -59,3 +70,5 @@ export default [
     files: ['src/**/*.js']
   }
 ]
+
+export default config

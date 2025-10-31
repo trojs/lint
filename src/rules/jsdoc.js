@@ -1,5 +1,8 @@
+/* @ts-self-types="../../types/rules/jsdoc.d.ts" */
 import jsdocPlugin from 'eslint-plugin-jsdoc'
-export default {
+
+/** @type {Record<string, unknown>} */
+const rules = {
   ...jsdocPlugin.configs['flat/recommended-typescript-flavor'].rules,
   'jsdoc/check-access': 'off',
   'jsdoc/check-alignment': 'error',
@@ -53,3 +56,5 @@ export default {
   'jsdoc/tag-lines': 'error',
   'jsdoc/valid-types': 'warn'
 }
+
+export default rules

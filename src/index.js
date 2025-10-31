@@ -1,3 +1,4 @@
+/* @ts-self-types="../types/index.d.ts" */
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import importPlugin from 'eslint-plugin-import-x'
 import nodePlugin from 'eslint-plugin-n'
@@ -15,6 +16,8 @@ import promiseRules from './rules/promise.js'
 import eslintConfig from './eslint.config.js'
 
 const jsRules = pluginJs.configs.recommended.rules
+
+/** @type {Record<string, unknown>} */
 const rules = {
   trojs: trojsRules,
   jsdoc: jsdocRules,
@@ -35,6 +38,8 @@ const rules = {
     ...stylisticRules
   }
 }
+
+/** @type {Record<string, unknown>} */
 const plugins = {
   '@stylistic': stylisticPlugin,
   'import-x': importPlugin,
@@ -44,4 +49,7 @@ const plugins = {
   sonarjs: sonarjsPlugin,
   js: pluginJs
 }
-export { rules, plugins, eslintConfig as default }
+
+const config = eslintConfig
+
+export { rules, plugins, config as default }
