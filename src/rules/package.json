@@ -14,7 +14,7 @@
         "vulnerabilities": "npm audit --omit=dev --audit-level=moderate"
     },
     "files": [
-        "eslingconfig.json",
+        "eslintconfig.json",
         "src/index.js",
         "src/eslint.config.js",
         "src/rules/import.js",
