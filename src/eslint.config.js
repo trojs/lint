@@ -37,6 +37,15 @@ export default [
     settings: {
       jsdoc: {
         mode: 'typescript'
+      },
+      'import-x/resolver': {
+        node: {
+          extensions: ['.mjs', '.js', '.cjs', '.ts', '.tsx']
+        },
+        typescript: {
+          project: true,
+          alwaysTryTypes: true
+        }
       }
     },
     plugins: {

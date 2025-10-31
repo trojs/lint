@@ -35,6 +35,8 @@ const rules = {
     ...stylisticRules
   }
 }
+
+/** @type {Record<string, unknown>} */
 const plugins = {
   '@stylistic': stylisticPlugin,
   'import-x': importPlugin,
@@ -44,4 +46,5 @@ const plugins = {
   sonarjs: sonarjsPlugin,
   js: pluginJs
 }
+
 export { rules, plugins, eslintConfig as default }
