@@ -8,12 +8,12 @@
     "module": "./src/index.js",
     "types": "./types/index.d.ts",
     "scripts": {
-        "lint": "eslint --config src/eslint.config.js",
-        "lint:fix": "eslint --config src/eslint.config.js --fix",
-        "lint:report": "eslint --config src/eslint.config.js -f json -o report.json",
-        "lint:rules": "eslint --config src/eslint.config.js --print-config src/index.js > eslintconfig.json",
+        "lint": "eslint --config ./src/eslint.config.js",
+        "lint:fix": "eslint --config ./src/eslint.config.js --fix",
+        "lint:report": "eslint --config ./src/eslint.config.js -f json -o report.json",
+        "lint:rules": "eslint --config ./src/eslint.config.js --print-config ./src/index.js > eslintconfig.json",
         "lint:types": "tsc --noEmit --project tsconfig.json --skipLibCheck",
-        "generate:types": "rm -rf types && tsc --skipLibCheck --declaration --allowJs --emitDeclarationOnly --outDir types ./src/index.js",
+        "generate:types": "rm -rf ./types && tsc --skipLibCheck --declaration --allowJs --emitDeclarationOnly --outDir ./types ./src/index.js",
         "test": "c8 node --test",
         "cpd": "node_modules/jscpd/bin/jscpd src",
         "vulnerabilities": "npm audit --omit=dev --audit-level=moderate"
