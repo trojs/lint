@@ -1,2 +1,3 @@
-declare const _default: any;
-export default _default;
+export default promiseRules;
+/** @type {Record<string, unknown>} */
+declare const promiseRules: Record<string, unknown>;

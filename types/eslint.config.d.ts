@@ -1,2 +1,3 @@
-declare const _default: any[];
-export default _default;
+export default config;
+/** @type {readonly unknown[]} */
+declare const config: readonly unknown[];

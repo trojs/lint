@@ -1,4 +1,6 @@
-export default {
+/* @ts-self-types="../../types/rules/tro.d.ts" */
+/** @type {Record<string, unknown>} */
+const rules = {
   'block-scoped-var': 'error',
   complexity: [
     'error',
@@ -246,3 +248,5 @@ export default {
     }
   ]
 }
+
+export default rules

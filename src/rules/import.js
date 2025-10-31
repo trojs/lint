@@ -1,6 +1,8 @@
+/* @ts-self-types="../../types/rules/import.d.ts" */
 import { flatConfigs } from 'eslint-plugin-import-x'
 
-export default {
+/** @type {Record<string, unknown>} */
+const rules = {
   ...flatConfigs.recommended.rules,
   'import-x/prefer-default-export': 'off',
   'import-x/named': 'error',
@@ -41,3 +43,5 @@ export default {
     }
   ]
 }
+
+export default rules

@@ -1,5 +1,8 @@
+/* @ts-self-types="../../types/rules/stylistic.d.ts" */
 import stylisticPlugin from '@stylistic/eslint-plugin'
-export default {
+
+/** @type {Record<string, unknown>} */
+const rules = {
   ...stylisticPlugin.configs.recommended.rules,
   '@stylistic/semi': [
     'error',
@@ -33,3 +36,5 @@ export default {
     }
   ]
 }
+
+export default rules
